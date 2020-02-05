@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="color" class="com.epam.springtasks.secondtask.ColorFactory">
+    <property name="r" value="123"/>
+    <property name="g" value="228"/>
+    <property name="b" value="0"/>
+</bean>
+
+<bean name="colorRandom" class="com.epam.springtasks.secondtask.RandomColorFactory" init-method="init"/>
+</beans>
